@@ -193,7 +193,7 @@ async def receive_question(question: str = Form(...), file: UploadFile = File(No
         answer = await read_answer(task_id=task_id, question=question)
     elif task_id in ["GA2.3"]:
         # answer = GA2_3(question)
-        answer = "https://tusharisme.github.io/tds_work"
+        answer = "https://21f2000304.github.io/public/"
     elif task_id in ["GA2.2", "GA2.4"]:
         if file:
             print(file)
@@ -218,7 +218,7 @@ async def receive_question(question: str = Form(...), file: UploadFile = File(No
                 task_id=task_id, question=question, file_path=""
             )
     elif task_id in ["GA2.6"]:
-        answer = "https://api-git-main-telvinvargheses-projects.vercel.app/api"
+        answer = "https://tds-j0bv5ljny-afsals-projects-7b05c45f.vercel.app/api"
         # print(file)
         # if file:
         #     flag = await GA2_6_file(file)
@@ -229,11 +229,11 @@ async def receive_question(question: str = Form(...), file: UploadFile = File(No
         # else:
         #     answer = "https://api-git-main-telvinvargheses-projects.vercel.app/api"
     elif task_id in ["GA2.7"]:
-        answer = "https://github.com/Tusharisme/pyth"
+        answer = "https://github.com/22f3000340/action"
         # answer = GA2_7(question)
         # answer = "https://github.com/Telvinvarghese/Test"
     elif task_id in ["GA2.8"]:
-        answer = "https://hub.docker.com/repository/docker/tushar2k5/my_image/general"
+        answer = "https://hub.docker.com/repository/docker/afsaliitm/myimage/general"
     elif task_id in ["GA2.9"]:
         answer = "https://tds-ga2-9.vercel.app/api"
         # print(file)
@@ -246,7 +246,7 @@ async def receive_question(question: str = Form(...), file: UploadFile = File(No
         # else:
         #     answer = "https://tds-ga2-9.vercel.app/api"
     elif task_id in ["GA2.10"]:
-        answer = "https://b45f-223-178-84-140.ngrok-free.app/"
+        answer = "https://4266-111-92-11-62.ngrok-free.app"
     elif task_id in ["GA3.1", "GA3.2", "GA3.3", "GA3.5", "GA3.6"]:
         answer = await fetch_answer(task_id=task_id, question=question, file_path="")
     elif task_id in ["GA3.4"]:
