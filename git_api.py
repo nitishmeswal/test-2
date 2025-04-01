@@ -218,13 +218,13 @@ def GA1_13(question):
         print("No email found")
     github_replace_text(
         token=token,
-        repo="Tusharisme/tds",
+        repo="21f2000304/tds",
         file_path="email.json",
         pattern=r'"\s*email\s*"\s*:\s*"[^"]+"',
         replacement=f'"email": "{email}"',
     )
     print("Email updated in email.json")
-    return "https://raw.githubusercontent.com/Tusharisme/tds/refs/heads/main/email.json"
+    return "https://raw.githubusercontent.com/21f2000304/tds/refs/heads/main/email.json"
 
 
 def GA2_3(question):
@@ -238,17 +238,17 @@ def GA2_3(question):
     pattern = r"\b([\w.+-]+)@ds\.study\.iitm\.ac\.in\b"
     github_replace_text(
         token=token,
-        repo="Telvinvarghese/website",
+        repo="21f2000304/website",
         file_path="index.html",
         pattern=pattern,
         replacement=email,
     )
     print("Email updated in index.html")
     trigger_github_workflow(
-        token=token, repo="Telvinvarghese/website", workflow_file="daily_commit.yml"
+        token=token, repo="21f2000304/website", workflow_file="daily_commit.yml"
     )  # Trigger the workflow after
     time.sleep(15)
-    return "https://telvinvarghese.github.io/website/?v=1"
+    return "https://21f2000304.github.io/website/?v=1"
 
 
 async def GA2_6_file(file: UploadFile = File(...)):
@@ -261,7 +261,7 @@ async def GA2_6_file(file: UploadFile = File(...)):
 
     # Upload the file to GitHub
     response = github_write_file(
-        token, "Telvinvarghese/api", file_path_on_github, file_content
+        token, "21f2000304/api", file_path_on_github, file_content
     )
 
     print({"message": "File uploaded successfully!", "github_response": response})
@@ -279,7 +279,7 @@ async def GA2_9_file(file: UploadFile = File(...)):
 
     # Upload the file to GitHub
     response = github_write_file(
-        token, "Telvinvarghese/tds_ga2_9", file_path_on_github, file_content
+        token, "21f2000304/tds_ga2_9", file_path_on_github, file_content
     )
 
     print({"message": "File uploaded successfully!", "github_response": response})
@@ -298,21 +298,21 @@ def GA2_7(question):
     pattern = r"\b([\w.+-]+)@ds\.study\.iitm\.ac\.in\b"
     github_replace_text(
         token=token,
-        repo="Telvinvarghese/Test",
+        repo="21f2000304/Test",
         file_path=".github/workflows/Daily_Commit.yml",
         pattern=pattern,
         replacement=email,
     )
     print("Email updated in Daily_Commit.yml")
     trigger_github_workflow(
-        token=token, repo="Telvinvarghese/Test", workflow_file="Daily_Commit.yml"
+        token=token, repo="21f2000304/Test", workflow_file="Daily_Commit.yml"
     )
     time.sleep(15)
-    return "https://github.com/Telvinvarghese/Test"
+    return "https://github.com/21f2000304/Test"
 
 
 def GA4_8(question):
-    return "https://github.com/Tusharisme/tds"
+    return "https://github.com/21f2000304/tds"
 
 
 # GA1_13("""pre-commit: Git hooks
