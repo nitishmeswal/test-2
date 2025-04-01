@@ -229,7 +229,7 @@ async def receive_question(question: str = Form(...), file: UploadFile = File(No
         # else:
         #     answer = "https://tds-j0bv5ljny-afsals-projects-7b05c45f.vercel.app/api"
     elif task_id in ["GA2.7"]:
-        answer = "https://github.com/22f3000340/action"
+        answer = "https://github.com/21f2000304/action"
         # answer = GA2_7(question)
         # answer = "https://github.com/22f3000340/Test"
     elif task_id in ["GA2.8"]:
